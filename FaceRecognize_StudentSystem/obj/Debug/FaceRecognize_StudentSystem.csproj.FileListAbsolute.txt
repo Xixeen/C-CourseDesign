@@ -1,0 +1,11 @@
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\bin\Debug\FaceRecognize_StudentSystem.exe.config
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\bin\Debug\FaceRecognize_StudentSystem.exe
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\bin\Debug\FaceRecognize_StudentSystem.pdb
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.csproj.AssemblyReference.cache
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.csproj.SuggestedBindingRedirects.cache
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.AddAdmin.resources
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.Properties.Resources.resources
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.csproj.GenerateResource.cache
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.csproj.CoreCompileInputs.cache
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.exe
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.pdb
