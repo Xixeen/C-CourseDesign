@@ -1,11 +1,13 @@
 ﻿using FaceRecognize_StudentSystem.Properties;
 using System.Windows.Forms;
 using System;
+using System.Drawing;
 
 namespace FaceRecognize_StudentSystem
 {
     partial class AddAdmin
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -42,6 +44,7 @@ namespace FaceRecognize_StudentSystem
 
         private void InitializeComponent()
         {
+
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,6 +63,12 @@ namespace FaceRecognize_StudentSystem
             this.panel1.Size = new System.Drawing.Size(1387, 59);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            //
+            // panel1_MouseMove
+            //
+            this.panel1.MouseDown += new MouseEventHandler(Form_MouseDown);
+            this.panel1.MouseMove += new MouseEventHandler(Form_MouseMove);
+            this.panel1.MouseUp += new MouseEventHandler(Form_MouseUp);
             // 
             // label1
             // 
@@ -75,6 +84,7 @@ namespace FaceRecognize_StudentSystem
             this.label1.Click += new System.EventHandler(this.label1_Click);
             this.label1.MouseEnter += new System.EventHandler(this.label1_MouseEnter);
             this.label1.MouseLeave += new System.EventHandler(this.label1_MouseLeave);
+
             // 
             // label2
             // 
@@ -110,7 +120,7 @@ namespace FaceRecognize_StudentSystem
             this.ResumeLayout(false);
 
         }
-        
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -118,9 +128,28 @@ namespace FaceRecognize_StudentSystem
         /// the contents of this method with the code editor.
         /// </summary>
 
-
+        void Form_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+        void Form_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+        }
+        void Form_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
         #endregion
-
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private Label label2;
