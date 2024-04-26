@@ -1,7 +1,0 @@
-﻿  slide.C
-E:\VSPRO\C#_CourseDesign\ConsoleApplication1\slide.C(36,16): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 2 has type 'time_t'
-E:\VSPRO\C#_CourseDesign\ConsoleApplication1\slide.C(36,16): message : consider using '%lld' in the format string
-E:\VSPRO\C#_CourseDesign\ConsoleApplication1\slide.C(36,16): message : consider using '%Id' in the format string
-E:\VSPRO\C#_CourseDesign\ConsoleApplication1\slide.C(36,16): message : consider using '%I64d' in the format string
-E:\VSPRO\C#_CourseDesign\ConsoleApplication1\slide.C(72,5): warning C4013: 'Sleep' undefined; assuming extern returning int
-  ConsoleApplication1.vcxproj -> E:\VSPRO\C#_CourseDesign\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe

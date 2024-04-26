@@ -22,6 +22,13 @@
 
         private void InitializeComponent()
         {
+            this.SuspendLayout();
+            // 
+            // AdminOptions
+            // 
+            this.ClientSize = new System.Drawing.Size(1137, 662);
+            this.Name = "AdminOptions";
+            this.ResumeLayout(false);
 
         }
         

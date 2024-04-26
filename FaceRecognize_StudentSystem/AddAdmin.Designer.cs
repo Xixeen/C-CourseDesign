@@ -12,7 +12,6 @@ namespace FaceRecognize_StudentSystem
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -44,16 +43,17 @@ namespace FaceRecognize_StudentSystem
 
         private void InitializeComponent()
         {
-
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -63,28 +63,9 @@ namespace FaceRecognize_StudentSystem
             this.panel1.Size = new System.Drawing.Size(1387, 59);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            //
-            // panel1_MouseMove
-            //
-            this.panel1.MouseDown += new MouseEventHandler(Form_MouseDown);
-            this.panel1.MouseMove += new MouseEventHandler(Form_MouseMove);
-            this.panel1.MouseUp += new MouseEventHandler(Form_MouseUp);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(1344, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 37);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            this.label1.MouseEnter += new System.EventHandler(this.label1_MouseEnter);
-            this.label1.MouseLeave += new System.EventHandler(this.label1_MouseLeave);
-
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form_MouseUp);
             // 
             // label2
             // 
@@ -92,7 +73,7 @@ namespace FaceRecognize_StudentSystem
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(1300, 8);
-            this.label2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 37);
             this.label2.TabIndex = 1;
@@ -100,6 +81,36 @@ namespace FaceRecognize_StudentSystem
             this.label2.Click += new System.EventHandler(this.label1_Click);
             this.label2.MouseEnter += new System.EventHandler(this.label1_MouseEnter);
             this.label2.MouseLeave += new System.EventHandler(this.label1_MouseLeave);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(1344, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 37);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "X";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.MouseEnter += new System.EventHandler(this.label1_MouseEnter);
+            this.label1.MouseLeave += new System.EventHandler(this.label1_MouseLeave);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(1256, 9);
+            this.label3.Margin = new System.Windows.Forms.Padding(0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 37);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "—";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.MouseEnter += new System.EventHandler(this.label1_MouseEnter);
+            this.label3.MouseLeave += new System.EventHandler(this.label1_MouseLeave);
             // 
             // AddAdmin
             // 
@@ -153,6 +164,7 @@ namespace FaceRecognize_StudentSystem
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private Label label2;
+        private Label label3;
     }
 }
 

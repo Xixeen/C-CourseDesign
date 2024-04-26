@@ -9,3 +9,10 @@ E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_Stu
 E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.csproj.CoreCompileInputs.cache
 E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.exe
 E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.pdb
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.AdminOptions.resources
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.Splash.resources
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\bin\Debug\Guna.UI2.dll
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\bin\Debug\System.Drawing.Common.dll
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\bin\Debug\System.Drawing.Common.pdb
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\bin\Debug\System.Drawing.Common.xml
+E:\VSPRO\C#_CourseDesign\FaceRecognize_StudentSystem\obj\Debug\FaceRecognize_StudentSystem.csproj.CopyComplete
