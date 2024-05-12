@@ -16,5 +16,10 @@ namespace FaceRecognize_StudentSystem
         {
             InitializeComponent();
         }
+
+        private void AdminOptions_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
