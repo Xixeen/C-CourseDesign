@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\CourseDesign\packages\EmguCV.3.1.0.1\build\EmguCV.props" Condition="Exists('..\CourseDesign\packages\EmguCV.3.1.0.1\build\EmguCV.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,8 +36,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Emgu.CV.UI, Version=3.1.0.2282, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\CourseDesign\packages\EmguCV.3.1.0.1\lib\net30\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI.GL, Version=3.1.0.2282, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\CourseDesign\packages\EmguCV.3.1.0.1\lib\net30\Emgu.CV.UI.GL.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.World, Version=3.1.0.2282, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <HintPath>..\CourseDesign\packages\EmguCV.3.1.0.1\lib\net30\Emgu.CV.World.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\CourseDesign\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\CourseDesign\packages\OpenTK.1.1.2225.0\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\CourseDesign\packages\OpenTK.GLControl.1.1.2225.0\lib\net20\OpenTK.GLControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,6 +71,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\CourseDesign\packages\ZedGraph.5.1.5\lib\ZedGraph.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddAdmin.cs">
@@ -94,6 +115,7 @@
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="OpenTK.dll.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -168,5 +190,133 @@
   <ItemGroup>
     <None Include="Resources\student.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backIcons2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backIcons11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backIcons-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bi-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classroom_50coverpx1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classroom_50whitepx1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classroomblue_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover311.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinterest_profile_image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backIcons3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backIcons12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backIcons-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bi-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classroom_50coverpx2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classroom_50whitepx2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classroomblue_50px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover312.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinterest_profile_image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_50px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\CourseDesign\packages\EmguCV.3.1.0.1\build\EmguCV.props')" Text="$([System.String]::Format('$(ErrorText)', '..\CourseDesign\packages\EmguCV.3.1.0.1\build\EmguCV.props'))" />
+    <Error Condition="!Exists('..\CourseDesign\packages\EmguCV.3.1.0.1\build\EmguCV.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\CourseDesign\packages\EmguCV.3.1.0.1\build\EmguCV.targets'))" />
+  </Target>
+  <Import Project="..\CourseDesign\packages\EmguCV.3.1.0.1\build\EmguCV.targets" Condition="Exists('..\CourseDesign\packages\EmguCV.3.1.0.1\build\EmguCV.targets')" />
 </Project>

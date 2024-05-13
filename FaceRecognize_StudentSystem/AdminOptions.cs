@@ -21,5 +21,10 @@ namespace FaceRecognize_StudentSystem
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -118,64 +118,64 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="back icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="back icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backIcon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backIcon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backIcons-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backIcons-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backIcons-removebg-preview2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backIcons-removebg-preview2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backIcons11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backIcons11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backIcons12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backIcons12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backIcons2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backIcons2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backIcons3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backIcons3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bi-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bi-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bi-removebg-preview2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bi-removebg-preview2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="classroomblue_50px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classroomblue_50px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="classroomblue_50px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\classroomblue_50px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="classroom_50coverpx1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classroom_50coverpx1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="classroom_50coverpx2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\classroom_50coverpx2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="classroom_50whitepx1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classroom_50whitepx1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="classroom_50whitepx2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\classroom_50whitepx2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cover1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cover2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cover2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cover311" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cover311.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cover312" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cover312.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cover32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cover32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cover33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cover33.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="favicon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\favicon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="favicon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\favicon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="person1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\person1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="person2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pic11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pic11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pic12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pic12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pinterest_profile_image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pinterest_profile_image1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pinterest_profile_image2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pinterest_profile_image2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="refresh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\refresh1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="refresh2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shutdown_50px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shutdown_50px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shutdown_50px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shutdown_50px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="student1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\student1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="student2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\student2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

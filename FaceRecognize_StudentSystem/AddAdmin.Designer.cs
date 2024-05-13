@@ -44,6 +44,7 @@ namespace FaceRecognize_StudentSystem
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,10 +54,9 @@ namespace FaceRecognize_StudentSystem
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,6 +76,18 @@ namespace FaceRecognize_StudentSystem
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form_MouseUp);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::FaceRecognize_StudentSystem.Properties.Resources.bi_removebg_preview2;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(68, 48);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 31;
+            this.pictureBox4.TabStop = false;
             // 
             // label4
             // 
@@ -156,6 +168,7 @@ namespace FaceRecognize_StudentSystem
             this.button_login.TabIndex = 3;
             this.button_login.Text = "Open camera";
             this.button_login.UseVisualStyleBackColor = false;
+            this.button_login.Click += new System.EventHandler(this.button_login_Click);
             // 
             // button2
             // 
@@ -190,18 +203,6 @@ namespace FaceRecognize_StudentSystem
             this.label1.TabIndex = 6;
             this.label1.Text = "Name:";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            //this.pictureBox4.Image = global::FaceRecognize_StudentSystem.Properties.Resources.bi_removebg_preview;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(68, 48);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 31;
-            this.pictureBox4.TabStop = false;
-            // 
             // AddAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -224,8 +225,8 @@ namespace FaceRecognize_StudentSystem
             this.Load += new System.EventHandler(this.AddAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
