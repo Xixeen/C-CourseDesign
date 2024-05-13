@@ -23,39 +23,58 @@ namespace FaceRecognize_StudentSystem
         public AddAdmin()
         {
             InitializeComponent();
-           
         }
-
-        private void AddAdmin_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//add admin
         {
+            if (i)
+            {
+                MessageBox.Show("First capture image");
+            }
+            else
+            {
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Please enter the name");
+                }
+                else
+                {
+                    admin.Name = textBox1.Text;
+                    MemoryStream stream = new MemoryStream();
+                    pictureBox1.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                    byte[] pic = stream.ToArray();
+                    admin.Picture = pic;
 
+                    var success = admin.InsertCustomer(admin);
+                    if (success)
+                    {
+                        ClearControls();
+                        MessageBox.Show("Admin added successfully");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error occured!!!!!! Please try again... ");
+                    }
+                }
+
+            }
         }
-
-        private void AddAdmin_Load_1(object sender, EventArgs e)
+        private void ClearControls()
         {
+            textBox1.ResetText();
+            pictureBox1.Image = null;
+            pictureBox2.Image = null;
+
 
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void AddAdmin_Load(object sender, EventArgs e)
         {
-            
+            _streaming = false;
+            _capture = new Capture();
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
         private void button_login_Click(object sender, EventArgs e)
         {
             // _capture = new Capture();
@@ -81,6 +100,48 @@ namespace FaceRecognize_StudentSystem
 
             }
             _streaming = !_streaming;
+        }
+        private void streaming(object sender, System.EventArgs e)
+        {
+            try
+            {
+                var img = _capture.QueryFrame().ToImage<Bgr, byte>();
+                var bmp = img.Bitmap;
+                pictureBox1.Image = bmp;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error occured!!!! Try again later");
+            }
+
+        }
+        private void AddAdmin_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            AdminOptions ao = new AdminOptions();
+            ao.Show();
+            this.Hide();
         }
     }
 }

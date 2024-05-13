@@ -47,16 +47,18 @@ namespace FaceRecognize_StudentSystem
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button_login = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -65,7 +67,7 @@ namespace FaceRecognize_StudentSystem
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -88,6 +90,7 @@ namespace FaceRecognize_StudentSystem
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 31;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label4
             // 
@@ -115,24 +118,24 @@ namespace FaceRecognize_StudentSystem
             this.label3.Size = new System.Drawing.Size(34, 31);
             this.label3.TabIndex = 1;
             this.label3.Text = "⬜️";
-            this.label3.Click += new System.EventHandler(this.label1_Click);
+            this.label3.Click += new System.EventHandler(this.label6_Click);
             this.label3.MouseEnter += new System.EventHandler(this.label1_MouseEnter);
             this.label3.MouseLeave += new System.EventHandler(this.label1_MouseLeave);
             // 
-            // label2
+            // label6
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(1058, 8);
-            this.label2.Margin = new System.Windows.Forms.Padding(0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 31);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "X";
-            this.label2.Click += new System.EventHandler(this.label1_Click);
-            this.label2.MouseEnter += new System.EventHandler(this.label1_MouseEnter);
-            this.label2.MouseLeave += new System.EventHandler(this.label1_MouseLeave);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(1058, 8);
+            this.label6.Margin = new System.Windows.Forms.Padding(0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 31);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "X";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label6.MouseEnter += new System.EventHandler(this.label1_MouseEnter);
+            this.label6.MouseLeave += new System.EventHandler(this.label1_MouseLeave);
             // 
             // panel2
             // 
@@ -183,6 +186,7 @@ namespace FaceRecognize_StudentSystem
             this.button2.TabIndex = 4;
             this.button2.Text = "Add admin";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
@@ -203,6 +207,17 @@ namespace FaceRecognize_StudentSystem
             this.label1.TabIndex = 6;
             this.label1.Text = "Name:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(451, 108);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(583, 390);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
             // AddAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -213,6 +228,7 @@ namespace FaceRecognize_StudentSystem
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button_login);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -227,6 +243,7 @@ namespace FaceRecognize_StudentSystem
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,7 +279,7 @@ namespace FaceRecognize_StudentSystem
         private Point dragCursorPoint;
         private Point dragFormPoint;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
         private Label label3;
         private Label label4;
         private Panel panel2;
@@ -272,6 +289,7 @@ namespace FaceRecognize_StudentSystem
         private TextBox textBox1;
         private Label label1;
         private PictureBox pictureBox4;
+        private PictureBox pictureBox1;
     }
 }
 
