@@ -1,4 +1,6 @@
 ﻿using Guna.UI2.WinForms;
+
+
 namespace FaceRecognize_StudentSystem
 {
     partial class Splash
@@ -35,6 +37,7 @@ namespace FaceRecognize_StudentSystem
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ProgressIndicator1 = new Guna.UI2.WinForms.Guna2WinProgressIndicator();
             this.label1 = new System.Windows.Forms.Label();
+
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2CircleButton3 = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -65,6 +68,7 @@ namespace FaceRecognize_StudentSystem
             this.ProgressIndicator1.ProgressColor = System.Drawing.Color.White;
             this.ProgressIndicator1.Size = new System.Drawing.Size(77, 63);
             this.ProgressIndicator1.TabIndex = 5;
+            this.ProgressIndicator1.Click += new System.EventHandler(this.ProgressIndicator1_Click);
             // 
             // label1
             // 

@@ -26,5 +26,17 @@ namespace FaceRecognize_StudentSystem
         {
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            AddAdmin add = new AddAdmin();
+            this.Hide();
+            add.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -105,7 +105,7 @@ namespace FaceRecognize_StudentSystem
             this.label21.Location = new System.Drawing.Point(1019, 7);
             this.label21.Margin = new System.Windows.Forms.Padding(0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(34, 31);
+            this.label21.Size = new System.Drawing.Size(39, 37);
             this.label21.TabIndex = 2;
             this.label21.Text = "⬜️";
             // 
@@ -117,7 +117,7 @@ namespace FaceRecognize_StudentSystem
             this.label20.Location = new System.Drawing.Point(1058, 8);
             this.label20.Margin = new System.Windows.Forms.Padding(0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(33, 31);
+            this.label20.Size = new System.Drawing.Size(39, 37);
             this.label20.TabIndex = 1;
             this.label20.Text = "X";
             // 
@@ -132,6 +132,7 @@ namespace FaceRecognize_StudentSystem
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panel1
             // 
@@ -162,9 +163,9 @@ namespace FaceRecognize_StudentSystem
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label2.Location = new System.Drawing.Point(238, 301);
+            this.label2.Location = new System.Drawing.Point(216, 301);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 25);
+            this.label2.Size = new System.Drawing.Size(134, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Add Student";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -214,7 +215,7 @@ namespace FaceRecognize_StudentSystem
             this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label3.Location = new System.Drawing.Point(752, 301);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 25);
+            this.label3.Size = new System.Drawing.Size(126, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Add Course";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -256,15 +257,16 @@ namespace FaceRecognize_StudentSystem
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label5.Location = new System.Drawing.Point(221, 455);
+            this.label5.Location = new System.Drawing.Point(216, 455);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 25);
+            this.label5.Size = new System.Drawing.Size(156, 25);
             this.label5.TabIndex = 3;
             this.label5.Text = "Search Student";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -275,9 +277,9 @@ namespace FaceRecognize_StudentSystem
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label6.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label6.Location = new System.Drawing.Point(471, 455);
+            this.label6.Location = new System.Drawing.Point(475, 455);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 25);
+            this.label6.Size = new System.Drawing.Size(147, 25);
             this.label6.TabIndex = 3;
             this.label6.Text = "Update Record";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -290,7 +292,7 @@ namespace FaceRecognize_StudentSystem
             this.label8.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label8.Location = new System.Drawing.Point(752, 455);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 25);
+            this.label8.Size = new System.Drawing.Size(126, 25);
             this.label8.TabIndex = 3;
             this.label8.Text = "Add Admin";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -305,7 +307,7 @@ namespace FaceRecognize_StudentSystem
             this.label9.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label9.Location = new System.Drawing.Point(463, 51);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(159, 76);
+            this.label9.Size = new System.Drawing.Size(179, 76);
             this.label9.TabIndex = 5;
             this.label9.Text = "WELCOME ！";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

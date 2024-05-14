@@ -16,7 +16,7 @@ namespace FaceRecognize_StudentSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddAdmin());
+            Application.Run(new Splash());
         }
     }
 }
