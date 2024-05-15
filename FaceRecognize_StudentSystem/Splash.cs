@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,15 +35,15 @@ namespace FaceRecognize_StudentSystem
             ProgressIndicator1.Start();
             if (startpoint > 40)
             {
-                //SelectRole login = new SelectRole();
+                SelectRole login = new SelectRole();
                 //AddAdmin addAdmin = new AddAdmin();
-                AdminOptions adminOptions = new AdminOptions();
+                //AdminOptions adminOptions = new AdminOptions();
                 ProgressIndicator1.Stop();
                 timer1.Stop();
                 this.Hide();
                 //addAdmin.Show();
-                adminOptions.Show();
-                //login.Show();
+                //adminOptions.Show();
+                login.Show();
             }
         }
 

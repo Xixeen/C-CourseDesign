@@ -10,7 +10,7 @@ using System.Data;
 
 namespace FaceRecognize_StudentSystem
 {
-    class Admin
+    public class Admin
     {
         public int ID
         {
@@ -24,6 +24,7 @@ namespace FaceRecognize_StudentSystem
         {
             get; set;
         }
+        public const string SelectQuery = "SELECT * FROM admins";
 
         private static String myConn = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
 
@@ -43,8 +44,6 @@ namespace FaceRecognize_StudentSystem
             }
             return (rows > 0);
         }
-
-        public const String SelectQuery = "select * from admins";
 
         public DataTable GetCustomer()
         {
