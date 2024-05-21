@@ -353,7 +353,7 @@ namespace Project
             }
             
             finalgpa = totalcal / totalcredit;
-            //MessageBox.Show("GPA : " + finalgpa);
+            MessageBox.Show("GPA : " + finalgpa);
 
            label18.Text = finalgpa.ToString("#.00");
 
@@ -392,28 +392,28 @@ namespace Project
                 MessageBox.Show("Error occured!!!!!!!!");
             }
 
-            //clearControl();
+            clearControl();
         }
 
-        //private void clearControl()
-        //{
-        //    textBox1.ResetText();
-        //    label3.ResetText();
-        //    label4.ResetText();
-        //    label5.ResetText();
-        //    label7.ResetText();
-        //    label8.ResetText();
-        //    label9.ResetText();
+        private void clearControl()
+        {
+            textBox1.ResetText();
+            label3.ResetText();
+           label4.ResetText();
+           label5.ResetText();
+            label7.ResetText();
+            label8.ResetText();
+            label9.ResetText();
 
-        //    label2.ResetText();
-        //    label10.ResetText();
-        //    label11.ResetText();
-        //    label14.ResetText();
-        //    label13.ResetText();
-        //    label12.ResetText();
+            label2.ResetText();
+            label10.ResetText();
+            label11.ResetText();
+            label14.ResetText();
+           label13.ResetText();
+            label12.ResetText();
 
-        //    label9.ResetText();
-        //}
+            label9.ResetText();
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -428,7 +428,7 @@ namespace Project
                 student.ID = textBox1.Text;
                 DataTable dt = student.SearchStudent(student, "ID");
 
-                //MessageBox.Show(dt.Rows[0][6].ToString() + "\n Dept:" +dt.Rows[0][7].ToString());
+                MessageBox.Show(dt.Rows[0][6].ToString() + "\n Dept:" +dt.Rows[0][7].ToString());
                 if (dt.Rows.Count == 0)
                 {
                     MessageBox.Show("There is no data at this ID");
@@ -441,7 +441,7 @@ namespace Project
                     DataTable dc = courde.SearchCourse(courde);
 
                     row = dc.Rows.Count;
-                    //MessageBox.Show(row.ToString());
+                    MessageBox.Show(row.ToString());
                     tRows = row;
                     String[] array = new String[] { " ", " ", " ", " ", " ", " " };
                     for (int i = 0; i < row; i++)
@@ -520,6 +520,16 @@ namespace Project
             AdminOptions ao = new AdminOptions();
             ao.Show();
             this.Hide();
+        }
+
+        private void AddResult_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

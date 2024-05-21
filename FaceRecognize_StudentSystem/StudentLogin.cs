@@ -28,50 +28,73 @@ namespace Project
             try
             {
                 // 获取用户输入的邮箱和密码
-                student.Email = textBox_usrname.Text;
-                student.Password = textBox_password.Text;
+                student.Email = textBox_usrname.Text.Trim();
+                student.Password = textBox_password.Text.Trim();
+
+                // 打印输入的邮箱
+                Console.WriteLine($"Input Email: {student.Email}");
+
+                // 检查用户输入是否为空
+                if (string.IsNullOrWhiteSpace(student.Email))
+                {
+                    MessageBox.Show("Please enter your email."); // 显示请输入邮箱提示
+                    return;
+                }
 
                 // 检查用户邮箱是否存在
                 var emailCheckResult = student.checkEmail(student);
-                if (emailCheckResult.Rows.Count == 1)
+                Console.WriteLine($"Rows Count: {emailCheckResult.Rows.Count}"); // 打印查询结果的行数
+
+                if (emailCheckResult.Rows.Count == 0)
                 {
                     MessageBox.Show("Invalid email id"); // 显示无效的邮箱提示
+                    return;
+                }
+
+                // 获取数据库中的密码
+                var passwordFromDatabase = emailCheckResult.Rows[0]["Password"].ToString();
+                Console.WriteLine($"Password from DB: {passwordFromDatabase}"); // 打印数据库中的密码
+
+                // 检查密码是否为空
+                if (string.IsNullOrWhiteSpace(passwordFromDatabase))
+                {
+                    // 提示用户设置密码
+                    MessageBox.Show("You are first time user!!!!\nSet your password, we will save it for later. Please enter your password and click login again.");
+
+                    // 检查用户是否输入密码
+                    if (string.IsNullOrWhiteSpace(student.Password))
+                    {
+                        MessageBox.Show("Please enter your password."); // 提示用户输入密码
+                        return;
+                    }
+
+                    // 更新数据库中的密码
+                    student.UpdatePassword(student);
+                    MessageBox.Show("Password set successfully. You can now log in with your new password.");
+                }
+                else if (passwordFromDatabase == student.Password)
+                {
+                    // 密码正确，跳转到学生选项窗体
+                    SetValueForText1 = student.Email;
+                    SetValueForText2 = student.Password;
+                    StudentOptions admin = new StudentOptions(); // 创建学生选项窗体的实例
+                    this.Hide(); // 隐藏当前窗体
+                    admin.Show(); // 显示学生选项窗体
                 }
                 else
                 {
-                    if (string.IsNullOrWhiteSpace(textBox_password.Text))
-                    {
-                        MessageBox.Show("Please Enter Password"); // 显示请输入密码提示
-                    }
-                    else
-                    {
-                        var passwordFromDatabase = emailCheckResult.Rows[0][10].ToString();
-                        // 如果密码为空，则提示用户设置密码
-                        if (string.IsNullOrWhiteSpace(passwordFromDatabase))
-                        {
-                            MessageBox.Show("You are first time user!!!!\nSet your password, we will save it for later"); // 显示设置密码提示
-                        }
-                        else if (passwordFromDatabase == textBox_password.Text)
-                        {
-                            // 如果密码正确，则跳转到学生选项窗体
-                            SetValueForText1 = textBox_usrname.Text;
-                            SetValueForText2 = textBox_password.Text;
-                            StudentOptions admin = new StudentOptions(); // 创建学生选项窗体的实例
-                            this.Hide(); // 隐藏当前窗体
-                            admin.Show(); // 显示学生选项窗体
-                        }
-                        else
-                        {
-                            MessageBox.Show("Wrong Password"); // 显示密码错误提示
-                        }
-                    }
+                    MessageBox.Show("Wrong Password"); // 显示密码错误提示
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message); // 显示异常消息
+                                                                     // 在这里可以记录错误日志，例如：
+                                                                     // Logger.LogError(ex);
             }
         }
+
+
 
         // 登录按钮点击事件
         private void button_login_Click(object sender, EventArgs e)
@@ -101,6 +124,11 @@ namespace Project
         }
 
         private void StudentLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_password_TextChanged(object sender, EventArgs e)
         {
 
         }

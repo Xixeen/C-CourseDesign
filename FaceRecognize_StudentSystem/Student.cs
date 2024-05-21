@@ -63,7 +63,7 @@ namespace Project
                 using (MySqlCommand com = new MySqlCommand(UpdateQuery, con))
                 {
                     com.Parameters.AddWithValue("@ID", student.ID);
-                    com.Parameters.AddWithValue("@Email", student.ID + "@aack.au.edu.pk");
+                    com.Parameters.AddWithValue("@Email", student.ID + "@whu.edu.cn");
                     rows = com.ExecuteNonQuery();
                 }
             }
@@ -102,8 +102,10 @@ namespace Project
                     }
                 }
             }
+            Console.WriteLine($"CheckEmail result count: {datatable.Rows.Count}"); // 添加调试信息
             return datatable;
         }
+
 
         public bool UpdatePassword(Student student)
         {
