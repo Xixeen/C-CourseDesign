@@ -27,10 +27,17 @@ namespace FaceRecognize_StudentSystem
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None; // 移除边框
 
-            // 设置模型路径
-            string modelPath = @"E:\VSPRO\C#_CourseDesign\models"; // 绝对路径
+            // 设置模型相对路径
+            string modelRelativePath = @"models"; // 相对路径
+            string modelPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, modelRelativePath);
+
+            // 输出完整路径以确保正确性
+            Console.WriteLine("模型路径: " + modelPath);
+
+            // 创建 FaceRecognition 实例
             _faceRecognition = FaceRecognition.Create(modelPath);
         }
+
         private void StartCamera()
         {
             _capture = new Capture();
